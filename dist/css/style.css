@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   outline: none;
+  overflow-x: hidden ;
   font-family: Open Sans;
 }
 a {
@@ -22,4 +23,146 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+.collapse {
+  padding: 0px;
+}
+.slider-area {
+  bottom: 0;
+  float: left;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  transition: left 0.4s ease 0s,top 0.4s ease 0s;
+}
+.main-slider {
+  height: 100%;
+  overflow: hidden;
+  width: 100%;
+  background: #aaa;
+}
+.main-slider img {
+  width: 100%;
+}
+.main-slider .bx-viewport {
+  border: medium none;
+  box-shadow: 0 0 0;
+  left: 0;
+}
+.main-slider .bx-pager {
+  bottom: 0;
+  display: table;
+  left: auto;
+  right: 0;
+  top: 38%;
+  width: 3% !important;
+  position: relative;
+}
+.main-slider .bx-pager .bx-pager-item {
+  border-radius: 20px;
+  float: left;
+  margin: 0 21px 18px;
+  position: relative;
+}
+.main-slider .bx-pager .bx-pager-item a {
+  border-radius: 20px;
+  height: 6px;
+  margin: 6px;
+  width: 6px;
+  background: #fff;
+}
+.main-slider .bx-pager .bx-pager-item a.active::before {
+  border: 1px solid #fff;
+  border-radius: 20px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.main-slider .bx-pager .bx-pager-item a:hover,
+.main-slider .bx-pager .bx-pager-item a .active {
+  background: #fff none repeat scroll 0 0;
+}
+.main-slider .bx-wrapper .bx-viewport {
+  background: #52504f none repeat scroll 0 0;
+}
+.slider-area .bx-controls {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 4%;
+  z-index: 9;
+}
+.page-content {
+  background: #efefef none repeat scroll 0 0;
+  clear: both;
+  height: 500px;
+  width: 100%;
+}
+.header-content {
+  background: transparent none repeat scroll 0 0;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+.header-content .top-header {
+  background: #000 none repeat scroll 0 0;
+  padding: 14px 0;
+  width: 100%;
+}
+.header-content .top-header span {
+  display: inline-block;
+  color: #afafaf;
+}
+.header-content .top-header p {
+  color: #fff;
+  display: inline-block;
+  margin: 0 0 0 7px;
+}
+.header-content .top-header p i {
+  color: #afafaf;
+  margin-right: 2px;
+}
+.header-content .top-header a {
+  color: #fff;
+  font-size: 13px;
+  margin-left: 11px;
+}
+header {
+  background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+}
+header .navbar {
+  border: 0 none;
+  margin: 0;
+  padding: 9px 0;
+}
+header .navbar .navbar-header {
+  color: #fff;
+}
+header .navbar .navbar-brand {
+  color: #fff;
+  height: initial;
+  padding: 8px;
+}
+header .main-ul {
+  float: right;
+}
+header .main-ul li {
+  padding: 9px 0;
+}
+header .main-ul li a {
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 18px;
+  text-transform: uppercase;
+}
+header .main-ul li a:hover,
+header .main-ul li a:focus {
+  background: transparent;
 }
