@@ -1,5 +1,21 @@
-.color {
-  background: red;
+.transition,
+.header-tabs .header-tabs-item,
+.index-courses ul li div a {
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.block,
+.index-courses,
+.index-events .ievent-item {
+  float: left;
+  width: 100%;
+}
+.inblock {
+  display: inline-block;
+  width: 100%;
 }
 * {
   outline: none !important;
@@ -9,7 +25,7 @@ body {
   padding: 0;
   outline: none;
   overflow-x: hidden ;
-  font-family: Open Sans;
+  font-family: Roboto;
 }
 a {
   color: #333;
@@ -98,12 +114,6 @@ ul {
   width: 4%;
   z-index: 9;
 }
-.page-content {
-  background: #efefef none repeat scroll 0 0;
-  clear: both;
-  height: 500px;
-  width: 100%;
-}
 .header-content {
   background: transparent none repeat scroll 0 0;
   height: 100%;
@@ -165,4 +175,473 @@ header .main-ul li a {
 header .main-ul li a:hover,
 header .main-ul li a:focus {
   background: transparent;
+}
+.header-tabs {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.header-tabs .header-tabs-item {
+  background: rgba(0, 0, 0, 0.5) none repeat scroll 0 0;
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 5px 0;
+  width: 33%;
+  cursor: pointer;
+}
+.header-tabs .header-tabs-item:hover {
+  background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+}
+.header-tabs .header-tabs-item img {
+  float: left;
+  margin-right: 4px;
+  padding: 17px;
+  width: initial;
+}
+.header-tabs .header-tabs-item h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 14px 0 7px;
+}
+.header-tabs .header-tabs-item a {
+  color: #ffb606;
+  font-weight: 700;
+}
+.page-content {
+  background: #fff none repeat scroll 0 0;
+  clear: both;
+  width: 100%;
+  padding: 60px 0;
+}
+.index-courses ul {
+  margin: 0 -12px;
+}
+.index-courses ul li {
+  float: left;
+  margin-bottom: 26px;
+  padding: 0 12px;
+  width: 25%;
+}
+.index-courses ul li div {
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.index-courses ul li div img {
+  width: 100%;
+}
+.index-courses ul li div h3 {
+  color: #000;
+  font-size: 15px;
+  line-height: 1.3;
+  margin: 0;
+  padding: 16px 40px;
+  text-align: center;
+}
+.index-courses ul li div a {
+  color: #6f6f6f;
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 12px auto;
+}
+.index-courses ul li div a i {
+  font-size: 15px;
+  margin-left: 6px;
+  transform: translate(0px, 1px);
+}
+.index-courses ul li div a:hover {
+  color: #000;
+}
+.index-courses ul li div .line {
+  background: #d1d1d1 none repeat scroll 0 0 padding-box content-box;
+  float: left;
+  height: 1px;
+  margin: 0;
+  padding: 0 12px;
+  position: relative;
+  width: 100%;
+}
+.index-courses ul li div .line:before {
+  background: #FFB606 none repeat scroll 0 0;
+  content: "";
+  height: 3px;
+  left: 50%;
+  margin-left: -20px;
+  position: absolute;
+  top: -1px;
+  width: 40px;
+}
+.head2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin: 0 0 30px;
+  padding-bottom: 14px;
+  position: relative;
+  text-transform: uppercase;
+}
+.head2 small {
+  clear: both;
+  color: #8d8d8d;
+  display: inline-block;
+  font-size: 14px;
+  margin: 5px 0;
+  text-transform: capitalize;
+  width: 100%;
+}
+.head2.center {
+  text-align: center;
+}
+.head2.center:before {
+  left: 50%;
+  margin-left: -30px;
+}
+.head2:before {
+  background: #000 none repeat scroll 0 0;
+  bottom: 0;
+  content: "";
+  height: 1px;
+  left: 2px;
+  position: absolute;
+  width: 60px;
+}
+.register-now {
+  background: transparent url("../images/bg-register-now.jpg") repeat scroll 0 0;
+  clear: both;
+  padding: 70px 0;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+.register-now:before {
+  background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  top: 0;
+}
+.register-now .register-info {
+  padding: 50px 0;
+}
+.register-now .register-info p {
+  color: #fff;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin: 0;
+}
+.register-now .register-info p span {
+  color: #FFB606;
+}
+.register-now .register-info h2 {
+  color: #fff;
+  font-size: 62px;
+  font-weight: 600;
+  margin-top: 0;
+  text-transform: uppercase;
+}
+.register-now .register-form {
+  background: #fff none repeat scroll 0 0;
+  width: 100%;
+}
+.register-now .register-form form {
+  padding: 50px 26px 30px;
+}
+.register-now .register-form form input {
+  border-radius: 0;
+  box-shadow: 0 0 0;
+  font-family: arial;
+  font-size: 14px;
+}
+.register-now .register-form form input:focus {
+  border: 1px solid #FFB606;
+}
+.register-now .register-form form button {
+  background: #000 none repeat scroll 0 0;
+  border: medium none;
+  color: #fff;
+  padding: 10px;
+  width: 100%;
+}
+.register-now .register-form h3 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.4;
+  overflow: hidden;
+  padding: 25px 20px 40px;
+  position: relative;
+  text-align: center;
+}
+.register-now .register-form h3 span {
+  position: relative;
+}
+.register-now .register-form h3:before {
+  background: #ffb606 none repeat scroll 0 0;
+  border-radius: 50%;
+  bottom: 0;
+  content: "";
+  height: 820px;
+  left: -230px;
+  position: absolute;
+  right: auto;
+  width: 820px;
+}
+.register-now .timer {
+  margin: 30px 0;
+}
+.register-now .timer li {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  height: 110px;
+  margin-right: 24px;
+  padding: 10px;
+  text-align: center;
+  width: 110px;
+}
+.register-now .timer li span {
+  color: #fff;
+  font-size: 42px;
+  font-weight: 600;
+}
+.register-now .timer li p {
+  font-size: 13px;
+  margin-top: -3px;
+}
+.welcome {
+  float: left;
+  margin-bottom: 52px;
+  width: 100%;
+}
+.welcome img {
+  margin-bottom: 22px;
+}
+.welcome p {
+  color: #8a8a8a;
+  font-family: arial;
+  line-height: 1.6;
+}
+.welcome a {
+  color: #6f6f6f;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.welcome a i {
+  font-size: 17px;
+  margin-left: 8px;
+  transform: translate(0px, 1px);
+}
+.index-events {
+  margin-bottom: 50px;
+}
+.index-events .ievent-item {
+  border-bottom: 1px solid #dadada;
+  margin-bottom: 22px;
+  padding-bottom: 5px;
+}
+.index-events .ievent-item .ev-date-box {
+  border: 1px solid #ffb606;
+  float: left;
+  margin-right: 13px;
+  padding: 0 13px;
+  text-align: center;
+}
+.index-events .ievent-item .ev-date-box b {
+  color: #ffb606;
+  display: inline-block;
+  font-size: 26px;
+  margin: -1px 0 -5px;
+}
+.index-events .ievent-item .ev-date-box p {
+  color: #ffb606;
+  font-weight: 600;
+  margin: 0 0 4px;
+}
+.index-events .ievent-item h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 5px;
+}
+.index-events .ievent-item span {
+  color: #999999;
+  display: inline-block;
+  font-size: 13px;
+}
+.index-events .ievent-item .event-info {
+  color: #8a8a8a;
+  display: table;
+  font-family: arial;
+  font-size: 13px;
+  line-height: 1.5;
+  margin-top: 9px;
+}
+.reviews {
+  margin: 20px auto;
+  max-width: 720px;
+  text-align: center;
+}
+.reviews .bx-wrapper .bx-viewport {
+  border: medium none;
+  box-shadow: 0 0 0;
+  left: 0;
+  padding: 0;
+}
+.reviews .bx-wrapper .bx-pager {
+  bottom: -50px;
+  text-align: center !important;
+  width: 100% !important;
+}
+.reviews .bx-wrapper .bx-pager .bx-pager-item {
+  display: inline-block;
+  margin: 0 7px;
+  position: relative;
+}
+.reviews .bx-wrapper .bx-pager .bx-pager-item a {
+  background: #FFB606 none repeat scroll 0 0;
+  border-radius: 20px;
+  height: 6px;
+  margin: 6px;
+  width: 6px;
+  position: relative;
+}
+.reviews .bx-wrapper .bx-pager .bx-pager-item a.active {
+  background: #000 none repeat scroll 0 0;
+}
+.reviews .bx-wrapper .bx-pager .bx-pager-item:before {
+  border: 1px solid #FFB606;
+  border-radius: 20px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.reviews .review-item {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+}
+.reviews .review-item img {
+  border: 1px solid #d8d8d8;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 14px;
+  padding: 2px;
+}
+.reviews .review-item h5 {
+  font-size: 21px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+.reviews .review-item p {
+  color: #6a6a6a;
+  font-family: arial;
+  font-size: 14px;
+}
+.reviews .review-item span {
+  color: #a6a6a6;
+  display: inline-block;
+  margin-bottom: 11px;
+}
+.newletter {
+  background: transparent url("../images//bg-newletter.png") repeat scroll 0 0;
+  background-size: cover;
+  margin: 50px auto -60px;
+  padding: 81px 80px 20px 30px;
+  width: 670px;
+}
+.newletter p {
+  color: #7a7a7a;
+  font-size: 13px;
+}
+.newletter form {
+  display: inline-block;
+  margin: 40px 0;
+}
+.newletter form input {
+  border: 1px solid #cacaca;
+  padding: 12px;
+  width: 380px;
+}
+.newletter form button {
+  background: #ffb606 none repeat scroll 0 0;
+  border: medium none;
+  color: #000;
+  font-size: 12px;
+  margin-left: -4px;
+  padding: 15px 23px 14px;
+}
+footer {
+  background: #000 none repeat scroll 0 0;
+  padding: 50px 0 30px;
+}
+footer .address {
+  display: inline-block;
+  width: 100%;
+}
+footer .address img {
+  margin-bottom: 26px;
+}
+footer .address p {
+  color: #9d9d9d;
+}
+footer .address p i {
+  margin-right: 9px;
+}
+footer .social-icon {
+  float: left;
+  margin: 15px 0;
+}
+footer .social-icon a {
+  border: 1px solid;
+  border-radius: 21px;
+  color: #c8c8c8;
+  float: left;
+  height: 34px;
+  margin-right: 16px;
+  padding: 6px;
+  text-align: center;
+  width: 34px;
+}
+footer h3 {
+  color: #fff;
+  font-size: 23px;
+  margin: 0 0 10px;
+}
+footer .footer-links {
+  margin: 24px 0;
+}
+footer .footer-links a {
+  color: #5d5d5d;
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: 3px;
+  width: 100%;
+}
+footer .footer-links a:hover {
+  color: #fff;
+}
+footer .copy-right {
+  margin-top: 40px;
+}
+footer .copy-right p {
+  color: #7f7f7f;
+  font-family: arial;
+  font-size: 12px;
+}
+footer .footer-nav {
+  margin-top: 40px;
+  text-align: right;
+}
+footer .footer-nav a {
+  color: #aaa;
+  font-family: arial;
+  font-size: 13px;
+  margin-left: 12px;
+}
+footer .footer-nav a:hover {
+  color: #fff;
 }
