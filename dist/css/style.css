@@ -1,6 +1,8 @@
 .transition,
+header .main-ul li a,
 .header-tabs .header-tabs-item,
-.index-courses ul li div a {
+.index-courses ul li div a,
+.whatis .whatis-info a {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
@@ -9,7 +11,8 @@
 }
 .block,
 .index-courses,
-.index-events .ievent-item {
+.index-events .ievent-item,
+.whatis .whatis-info {
   float: left;
   width: 100%;
 }
@@ -166,15 +169,19 @@ header .main-ul {
 header .main-ul li {
   padding: 9px 0;
 }
+header .main-ul li.active a {
+  background: #FFB606;
+}
 header .main-ul li a {
   color: #fff;
   font-weight: 700;
+  margin-right: 4px;
   padding: 8px 18px;
   text-transform: uppercase;
 }
 header .main-ul li a:hover,
 header .main-ul li a:focus {
-  background: transparent;
+  background: #FFB606;
 }
 .header-tabs {
   bottom: 0;
@@ -644,4 +651,97 @@ footer .footer-nav a {
 }
 footer .footer-nav a:hover {
   color: #fff;
+}
+.sub-title {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+.sub-title h3 {
+  color: #fff;
+  font-size: 38px;
+  font-weight: bold;
+  margin: 40px 0;
+  text-transform: uppercase;
+}
+.full-breadcrumb {
+  background: #e4e4e4 none repeat scroll 0 0;
+  clear: both;
+  padding: 10px 0;
+}
+.full-breadcrumb ol.breadcrumb {
+  background: #e4e4e4 none repeat scroll 0 0;
+  margin: 0;
+  padding: 10px 0;
+}
+.full-breadcrumb ol.breadcrumb li {
+  color: #a2a2a2;
+  font-family: arial;
+  font-size: 13px;
+}
+.whatis {
+  padding-top: 60px;
+}
+.whatis .whatis-info img {
+  float: left;
+  margin-right: 34px;
+}
+.whatis .whatis-info h2 {
+  display: inline-block;
+  font-size: 30px;
+  margin-top: 22px;
+}
+.whatis .whatis-info p {
+  color: #6f8190;
+  font-family: arial;
+  line-height: 1.8;
+  margin-bottom: 23px;
+}
+.whatis .whatis-info a {
+  background: #ffb606 none repeat scroll 0 0;
+  color: #000;
+  display: inline-block;
+  margin-top: 6px;
+  padding: 10px 22px;
+}
+.whatis .whatis-info a:hover {
+  color: #fff;
+  background: #000 none repeat scroll 0 0;
+}
+.content-brown {
+  background: #e4e4e4 none repeat scroll 0 0;
+  height: 400px;
+  padding: 60px 0;
+}
+.work-pro {
+  display: table;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+}
+.work-pro li {
+  float: left;
+  text-align: center;
+  width: 25%;
+}
+.work-pro li span {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 50%;
+  box-shadow: 0 0 5px #cecece;
+  display: inline-flex;
+  height: 100px;
+  margin-bottom: 21px;
+  width: 100px;
+}
+.work-pro li span i {
+  align-self: center;
+  color: #ffb606;
+  display: table;
+  font-size: 25px;
+  margin: 0 auto;
+}
+.work-pro li p {
+  color: #7b7b7b;
+  font-family: arial;
+  font-size: 14px;
 }

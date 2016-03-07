@@ -166,13 +166,19 @@ header{
 	float: right;
 	  li{
 		padding: 9px 0;
+		&.active a{
+		  background:#FFB606;
+		}
 	  a{
 		color: #fff;
 		font-weight: 700;
+		margin-right: 4px;
 		padding: 8px 18px;
 		text-transform: uppercase;
+
+		&:extend(.transition);
 		&:hover,&:focus{
-		  background:transparent;
+		  background:#FFB606;
 
 		}
 	  }
@@ -219,7 +225,6 @@ header{
   padding: 60px 0;
 }
 .index-courses{
-
   &:extend(.block);
   ul{
 	margin: 0 -12px;
@@ -658,9 +663,105 @@ footer{
 	}
   }
 }
+.sub-title{
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  h3{
+	color: #fff;
+	font-size: 38px;
+	font-weight: bold;
+	margin: 40px 0;
+	text-transform: uppercase;
+  }
+}
 
+.full-breadcrumb{
+  background: #e4e4e4 none repeat scroll 0 0;
+  clear: both;
+  padding: 10px 0;
+  ol.breadcrumb{
+	background: #e4e4e4 none repeat scroll 0 0;
+	margin: 0;
+	padding: 10px 0;
+	li{
+	  color: #a2a2a2;
+	  font-family: arial;
+	  font-size: 13px;
+	}
+  }
+}
+.whatis{
+  padding-top: 60px;
+  .whatis-info{
 
-
+	&:extend(.block);
+	img {
+	  float: left;
+	  margin-right: 34px;
+	}
+	h2{
+	  display: inline-block;
+	  font-size: 30px;
+	  margin-top: 22px;
+	}
+	p{
+	  color: #6f8190;
+	  font-family: arial;
+	  line-height: 1.8;
+	  margin-bottom: 23px;
+	}
+	a{
+	  background: #ffb606 none repeat scroll 0 0;
+	  color: #000;
+	  display: inline-block;
+	  margin-top: 6px;
+	  padding: 10px 22px;
+	  &:extend(.transition);
+	  &:hover{
+		color:#fff;
+		background: #000 none repeat scroll 0 0;
+	  }
+	}
+  }
+}
+.content-brown{
+  background: #e4e4e4 none repeat scroll 0 0;
+  height: 400px;
+  padding: 60px 0;
+}
+.work-pro{
+  display: table;
+  margin: 0 auto;
+  max-width: 800px;
+  width: 100%;
+  li{
+	float: left;
+	text-align: center;
+	width: 25%;
+	span{
+	  background: #fff none repeat scroll 0 0;
+	  border-radius: 50%;
+	  box-shadow: 0 0 5px #cecece;
+	  display: inline-flex;
+	  height: 100px;
+	  margin-bottom: 21px;
+	  width: 100px;
+	  i{
+		align-self: center;
+		color: #ffb606;
+		display: table;
+		font-size: 25px;
+		margin: 0 auto;
+	  }
+	}
+	p{
+	  color: #7b7b7b;
+	  font-family: arial;
+	  font-size: 14px;
+	}
+  }
+}
 
 @media (min-width: 0px) {
 	
