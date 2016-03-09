@@ -105,7 +105,7 @@ $(document).ready(function(){
  	runcode();
  	setTimeout(function(){
  		runcode();
- 	}, 300);
+ 	}, 500);
  });
 
 
