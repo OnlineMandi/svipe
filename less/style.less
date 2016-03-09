@@ -747,6 +747,8 @@ footer{
 	  height: 100px;
 	  margin-bottom: 21px;
 	  width: 100px;
+	  &:extend(.transition);
+	  cursor: pointer;
 	  i{
 		align-self: center;
 		color: #ffb606;
@@ -760,7 +762,11 @@ footer{
 	  font-family: arial;
 	  font-size: 14px;
 	}
+	&:hover span{
+	  background:#000;
+	}
   }
+
 }
 
 @media (min-width: 0px) {

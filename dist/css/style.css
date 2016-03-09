@@ -2,7 +2,8 @@
 header .main-ul li a,
 .header-tabs .header-tabs-item,
 .index-courses ul li div a,
-.whatis .whatis-info a {
+.whatis .whatis-info a,
+.work-pro li span {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
@@ -732,6 +733,7 @@ footer .footer-nav a:hover {
   height: 100px;
   margin-bottom: 21px;
   width: 100px;
+  cursor: pointer;
 }
 .work-pro li span i {
   align-self: center;
@@ -744,4 +746,7 @@ footer .footer-nav a:hover {
   color: #7b7b7b;
   font-family: arial;
   font-size: 14px;
+}
+.work-pro li:hover span {
+  background: #000;
 }
