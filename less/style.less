@@ -172,7 +172,7 @@ header{
 	  a{
 		color: #fff;
 		font-weight: 700;
-		margin-right: 4px;
+		margin-left: 10px;
 		padding: 8px 18px;
 		text-transform: uppercase;
 
@@ -324,7 +324,7 @@ header{
 	clear: both;
 	color: #8d8d8d;
 	display: inline-block;
-	font-size: 14px;
+	font-size: 13px;
 	margin: 5px 0;
 	text-transform: capitalize;
 	width: 100%;
@@ -619,7 +619,17 @@ header{
 	}
   }
 }
-
+.social-icon.blk{
+  padding:20px 0;
+  a{
+	color: #8a8a8a;
+	margin-right: 12px;
+	&:extend(.transition);
+	&:hover{
+	  color:#000;
+	}
+  }
+}
 .cours-detal-top{
 	display: inline-block;
   	width: 100%;
@@ -676,9 +686,10 @@ header{
 	  }
 	}
   	h4{
-	  color: #3f3f3f;
-	  font-size: 22px;
-	  margin: 22px 0;
+	  color: #000;
+	  font-size: 15px;
+	  margin-bottom: 6px;
+	  margin-top: 11px;
 	}
 }
 
@@ -698,21 +709,7 @@ footer{
 	  }
 	}
   }
-  .social-icon{
-	float: left;
-	margin: 15px 0;
-	a{
-	  border: 1px solid;
-	  border-radius: 21px;
-	  color: #c8c8c8;
-	  float: left;
-	  height: 34px;
-	  margin-right: 16px;
-	  padding: 6px;
-	  text-align: center;
-	  width: 34px;
-	}
-  }
+
   h3{
 	color: #fff;
 	font-size: 23px;
@@ -751,6 +748,21 @@ footer{
 		color:#fff;
 	  }
 	}
+  }
+}
+.social-icon{
+  float: left;
+  margin: 15px 0;
+  a{
+	border: 1px solid;
+	border-radius: 21px;
+	color: #c8c8c8;
+	float: left;
+	height: 34px;
+	margin-right: 16px;
+	padding: 6px;
+	text-align: center;
+	width: 34px;
   }
 }
 .sub-title{
@@ -862,23 +874,38 @@ footer{
   &:extend(.block);
   ul{
 	&:extend(.block);
-	padding:12px 0;
+	padding: 5px 0;
 	li{
-	  margin-bottom:12px;
 	  float: left;
+	  margin-bottom: 18px;
 	  &:extend(.block);
 	  img{
 		float: left;
+		margin-right: 12px;
 		width: 100px;
 	  }
-	  h4{
-		color:red;
+	  span{
+		color: #00bf00;
+		display: inline-block;
+		font-size: 13px;
+		font-weight: 400;
+		margin-top: 6px;
+		text-transform: uppercase;
 	  }
 	  a{
+		color: #606060;
+		&:extend(.transition);
+		&:hover{
+		  color: #000;
+		}
+	  }
+	}
+	.addbox{
+	  color:red;
+	  img{
 		color:red;
 	  }
 	}
-
   }
   h3{
 	border-bottom: 1px solid #dfdfdf;
@@ -903,8 +930,117 @@ footer{
 	}
   }
 }
-
-
+.contact-box{
+  display: inline-block;
+  width: 100%;
+  form{
+	input{
+	  border-radius: 0;
+	  box-shadow: 0 0 0;
+	  font-size: 12px;
+	  height: 36px;
+	  margin-bottom: 8px;
+	}
+	textarea{
+	  border-radius: 0;
+	  box-shadow: 0 0 0;
+	  font-size: 12px;
+	}
+	button.btn-theme{
+	  background: #ffb606 none repeat scroll 0 0;
+	  border-radius: 0;
+	  color: #fff;
+	  font-size: 13px;
+	  padding: 7px 25px;
+	  text-transform: uppercase;
+	  &:extend(.transition);
+	  &:hover{
+		background:#000;
+	  }
+	}
+  }
+}
+.contact-info{
+  border-bottom: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
+  margin-top: -1px;
+  padding: 18px 0;
+  h4{
+	color: #444444;
+	font-size: 15px;
+	margin-bottom: 6px;
+  }
+  span{
+	color: #8a8a8a;
+	font-size: 13px;
+  }
+  i{
+	color: #ffb606;
+	float: left;
+	font-size: 26px;
+	margin: 10px 13px 10px 0;
+  }
+}
+.googleMap{
+  height:500px;
+  width:100%;
+}
+.sub-mail{
+  background: #fff url("../images/bg-register-now.jpg") repeat scroll 0 0;
+  clear: both;
+  padding: 90px 0;
+  text-align: center;
+  width: 100%;
+  position:relative;
+  background-size:cover;
+  &:before{
+	background: rgba(0, 0, 0, 0.6) none repeat scroll 0 0;
+	content: "";
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+  }
+  h5{
+	color: #fff;
+	font-size: 32px;
+	font-weight: 500;
+	margin-bottom: 40px;
+	padding-bottom: 24px;
+	position: relative;
+	&:before{
+	  background: #fff none repeat scroll 0 0;
+	  bottom: 0;
+	  content: "";
+	  height: 1px;
+	  left: 50%;
+	  margin-left: -30px;
+	  position: absolute;
+	  width: 60px;
+	}
+  }
+  form{
+	margin-bottom: 12px;
+	position: relative;
+	input{
+	  font-size: 13px;
+	  height: 40px;
+	  padding: 0 10px;
+	  width: 280px
+	}
+	button{
+	  background: #ffb606 none repeat scroll 0 0;
+	  border: medium none;
+	  color: #fff;
+	  height: 38px;
+	  margin-left: -7px;
+	  padding: 0 20px;
+	  text-transform: uppercase;
+	  transform: translate(0px, 1px);
+	}
+  }
+}
 
 
 
