@@ -5,7 +5,8 @@ header .main-ul li a,
 .index-courses ul li div .img-box i,
 .index-courses ul li div a,
 .whatis .whatis-info a,
-.work-pro li span {
+.work-pro li span,
+.right-bar .list-itmes a {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
@@ -15,7 +16,10 @@ header .main-ul li a,
 .block,
 .index-courses,
 .index-events .ievent-item,
-.whatis .whatis-info {
+.whatis .whatis-info,
+.right-bar,
+.right-bar ul,
+.right-bar ul li {
   float: left;
   width: 100%;
 }
@@ -835,4 +839,42 @@ footer .footer-nav a:hover {
 }
 .work-pro li:hover span {
   background: #000;
+}
+.right-bar ul {
+  padding: 12px 0;
+}
+.right-bar ul li {
+  margin-bottom: 12px;
+  float: left;
+}
+.right-bar ul li img {
+  float: left;
+  width: 100px;
+}
+.right-bar ul li h4 {
+  color: red;
+}
+.right-bar ul li a {
+  color: red;
+}
+.right-bar h3 {
+  border-bottom: 1px solid #dfdfdf;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 0 10px;
+  padding: 9px 0;
+  text-transform: uppercase;
+}
+.right-bar .list-itmes {
+  float: left;
+  margin: 4px 0 12px;
+}
+.right-bar .list-itmes a {
+  display: inline-block;
+  font-size: 13px;
+  margin-bottom: 8px;
+  width: 100%;
+}
+.right-bar .list-itmes a:hover {
+  color: #FFB606;
 }

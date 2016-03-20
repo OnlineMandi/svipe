@@ -858,6 +858,58 @@ footer{
   }
 
 }
+.right-bar{
+  &:extend(.block);
+  ul{
+	&:extend(.block);
+	padding:12px 0;
+	li{
+	  margin-bottom:12px;
+	  float: left;
+	  &:extend(.block);
+	  img{
+		float: left;
+		width: 100px;
+	  }
+	  h4{
+		color:red;
+	  }
+	  a{
+		color:red;
+	  }
+	}
+
+  }
+  h3{
+	border-bottom: 1px solid #dfdfdf;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0 0 10px;
+	padding: 9px 0;
+	text-transform: uppercase;
+  }
+  .list-itmes{
+	float: left;
+	margin: 4px 0 12px;
+	a{
+	  display: inline-block;
+	  font-size: 13px;
+	  margin-bottom: 8px;
+	  width: 100%;
+	  &:extend(.transition);
+	  &:hover{
+		color:#FFB606;
+	  }
+	}
+  }
+}
+
+
+
+
+
+
+
 
 @media (min-width: 0px) {
 	
