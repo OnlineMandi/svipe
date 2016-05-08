@@ -109,6 +109,17 @@ $(document).ready(function(){
  });
 
 
+ $("#moreabout").click(function(){
+   var offset =  $(".content-brown").offset().top;
+   if($(".more-aboutinfo").is(":visible")){
+    return;
+   }
+  $(".more-aboutinfo").slideDown();
+  $('html, body').animate({scrollTop : offset},600);
+  return false;
+ });
+
+
   //$(".portfolio-slider").mousemove(function(e){
   //
   // var mouseX = e.pageX - $('.bg-images').offset().left;

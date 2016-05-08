@@ -4,6 +4,9 @@ header .main-ul li a,
 .index-courses ul li div .img-box:before,
 .index-courses ul li div .img-box i,
 .index-courses ul li div a,
+.register-now .register-form form button,
+.newletter form button,
+footer .social-icon a,
 .whatis .whatis-info a,
 .work-pro li span,
 .right-bar .list-itmes a {
@@ -17,6 +20,7 @@ header .main-ul li a,
 .index-courses,
 .index-events .ievent-item,
 .whatis .whatis-info,
+.aboutinf-con,
 .right-bar,
 .right-bar ul,
 .right-bar ul li {
@@ -142,13 +146,13 @@ ul {
   color: #afafaf;
 }
 .header-content .top-header p {
-  color: #fff;
+  color: #c3c3c3;
   display: inline-block;
   margin: 0 0 0 7px;
 }
 .header-content .top-header p i {
   color: #afafaf;
-  margin-right: 2px;
+  margin-right: 5px;
 }
 .header-content .top-header a {
   color: #fff;
@@ -178,7 +182,7 @@ header .main-ul li {
   padding: 9px 0;
 }
 header .main-ul li.active a {
-  background: #FFB606;
+  background: #DF251C;
 }
 header .main-ul li a {
   color: #fff;
@@ -189,7 +193,7 @@ header .main-ul li a {
 }
 header .main-ul li a:hover,
 header .main-ul li a:focus {
-  background: #FFB606;
+  background: #DF251C;
 }
 .header-tabs {
   bottom: 0;
@@ -220,7 +224,7 @@ header .main-ul li a:focus {
   margin: 14px 0 7px;
 }
 .header-tabs .header-tabs-item a {
-  color: #ffb606;
+  color: #DF251C;
   font-weight: 700;
 }
 .page-content {
@@ -303,7 +307,7 @@ header .main-ul li a:focus {
   width: 100%;
 }
 .index-courses ul li div .line:before {
-  background: #FFB606 none repeat scroll 0 0;
+  background: #DF251C none repeat scroll 0 0;
   content: "";
   height: 3px;
   left: 50%;
@@ -312,7 +316,8 @@ header .main-ul li a:focus {
   top: -1px;
   width: 40px;
 }
-.head2 {
+.head2,
+.aboutinf-con h2 {
   font-size: 26px;
   font-weight: 600;
   margin: 0 0 30px;
@@ -320,7 +325,8 @@ header .main-ul li a:focus {
   position: relative;
   text-transform: uppercase;
 }
-.head2 small {
+.head2 small,
+.aboutinf-con h2 small {
   clear: both;
   color: #8d8d8d;
   display: inline-block;
@@ -329,14 +335,17 @@ header .main-ul li a:focus {
   text-transform: capitalize;
   width: 100%;
 }
-.head2.center {
+.head2.center,
+.aboutinf-con h2.center {
   text-align: center;
 }
-.head2.center:before {
+.head2.center:before,
+.aboutinf-con h2.center:before {
   left: 50%;
   margin-left: -30px;
 }
-.head2:before {
+.head2:before,
+.aboutinf-con h2:before {
   background: #000 none repeat scroll 0 0;
   bottom: 0;
   content: "";
@@ -371,7 +380,7 @@ header .main-ul li a:focus {
   margin: 0;
 }
 .register-now .register-info p span {
-  color: #FFB606;
+  color: #DF251C;
 }
 .register-now .register-info h2 {
   color: #fff;
@@ -394,14 +403,17 @@ header .main-ul li a:focus {
   font-size: 14px;
 }
 .register-now .register-form form input:focus {
-  border: 1px solid #FFB606;
+  border: 1px solid #DF251C;
 }
 .register-now .register-form form button {
-  background: #000 none repeat scroll 0 0;
+  background: #df251c none repeat scroll 0 0;
   border: medium none;
   color: #fff;
   padding: 10px;
   width: 100%;
+}
+.register-now .register-form form button:hover {
+  background: #7B2522;
 }
 .register-now .register-form h3 {
   color: #fff;
@@ -417,7 +429,7 @@ header .main-ul li a:focus {
   position: relative;
 }
 .register-now .register-form h3:before {
-  background: #ffb606 none repeat scroll 0 0;
+  background: #DF251C none repeat scroll 0 0;
   border-radius: 50%;
   bottom: 0;
   content: "";
@@ -455,7 +467,10 @@ header .main-ul li a:focus {
   width: 100%;
 }
 .welcome img {
+  float: left;
   margin-bottom: 22px;
+  margin-right: 20px;
+  max-width: 192px;
 }
 .welcome p {
   color: #8a8a8a;
@@ -482,20 +497,20 @@ header .main-ul li a:focus {
   padding-bottom: 5px;
 }
 .index-events .ievent-item .ev-date-box {
-  border: 1px solid #ffb606;
+  border: 1px solid #DF251C;
   float: left;
   margin-right: 13px;
   padding: 0 13px;
   text-align: center;
 }
 .index-events .ievent-item .ev-date-box b {
-  color: #ffb606;
+  color: #DF251C;
   display: inline-block;
   font-size: 26px;
   margin: -1px 0 -5px;
 }
 .index-events .ievent-item .ev-date-box p {
-  color: #ffb606;
+  color: #DF251C;
   font-weight: 600;
   margin: 0 0 4px;
 }
@@ -516,6 +531,21 @@ header .main-ul li a:focus {
   font-size: 13px;
   line-height: 1.5;
   margin-top: 9px;
+}
+.index-events .ievent-item img {
+  float: right;
+  margin-bottom: 20px;
+  margin-left: 42px;
+  width: 290px;
+}
+.index-events .ievent-item a {
+  color: #df251c;
+  font-family: arial;
+  margin-left: 70px;
+}
+#event-dtl {
+  display: none;
+  padding-left: 70px;
 }
 .reviews {
   margin: 20px auto;
@@ -539,7 +569,7 @@ header .main-ul li a:focus {
   position: relative;
 }
 .reviews .bx-wrapper .bx-pager .bx-pager-item a {
-  background: #FFB606 none repeat scroll 0 0;
+  background: #DF251C none repeat scroll 0 0;
   border-radius: 20px;
   height: 6px;
   margin: 6px;
@@ -550,7 +580,7 @@ header .main-ul li a:focus {
   background: #000 none repeat scroll 0 0;
 }
 .reviews .bx-wrapper .bx-pager .bx-pager-item:before {
-  border: 1px solid #FFB606;
+  border: 1px solid #DF251C;
   border-radius: 20px;
   bottom: 0;
   content: "";
@@ -607,12 +637,15 @@ header .main-ul li a:focus {
   width: 380px;
 }
 .newletter form button {
-  background: #ffb606 none repeat scroll 0 0;
+  background: #DF251C none repeat scroll 0 0;
   border: medium none;
-  color: #000;
+  color: #fff;
   font-size: 12px;
   margin-left: -4px;
   padding: 15px 23px 14px;
+}
+.newletter form button:hover {
+  background: #7B2522;
 }
 .cours-detal-top {
   display: inline-block;
@@ -658,7 +691,7 @@ header .main-ul li a:focus {
   position: relative;
 }
 .cours-detal-top ul li:before {
-  background: #FFB606 none repeat scroll 0 0;
+  background: #DF251C none repeat scroll 0 0;
   border-radius: 50%;
   content: "";
   height: 8px;
@@ -671,6 +704,58 @@ header .main-ul li a:focus {
   color: #3f3f3f;
   font-size: 22px;
   margin: 22px 0;
+}
+.contact-info {
+  margin-top: 32px;
+}
+.contact-info .contact-info-item {
+  border-top: 1px solid #e9e9e9;
+  padding: 13px 0;
+}
+.contact-info .contact-info-item i {
+  color: #df251c;
+  float: left;
+  font-size: 24px;
+  height: 72px;
+  margin-right: 13px;
+  padding: 6px 0;
+  text-align: center;
+  width: 26px;
+}
+.contact-info .contact-info-item h3 {
+  color: #333;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 6px 0;
+}
+.contact-info .contact-info-item span {
+  color: #898989;
+  font-family: arial;
+}
+.contact-form {
+  margin-top: 30px;
+}
+.contact-form input,
+.contact-form textarea {
+  border: 1px solid #dadada;
+  border-radius: 0;
+  box-shadow: 0 0 0;
+  margin-bottom: 6px;
+}
+.contact-form textarea {
+  height: 120px;
+}
+.contact-form button {
+  background: #df251c none repeat scroll 0 0;
+  border: medium none;
+  border-radius: 0;
+  color: #fff;
+  padding: 7px 26px;
+}
+.contact-form button:hover,
+.contact-form button:focus {
+  background: #BD251E;
+  color: #fff;
 }
 footer {
   background: #000 none repeat scroll 0 0;
@@ -703,6 +788,10 @@ footer .social-icon a {
   padding: 6px;
   text-align: center;
   width: 34px;
+}
+footer .social-icon a:hover {
+  background: #DF251C;
+  border: 0 solid;
 }
 footer h3 {
   color: #fff;
@@ -785,19 +874,50 @@ footer .footer-nav a:hover {
 .whatis .whatis-info p {
   color: #6f8190;
   font-family: arial;
-  line-height: 1.8;
+  line-height: 1.6;
   margin-bottom: 23px;
 }
 .whatis .whatis-info a {
-  background: #ffb606 none repeat scroll 0 0;
-  color: #000;
+  background: #df251c none repeat scroll 0 0;
+  color: #fff;
+  cursor: pointer;
   display: inline-block;
   margin-top: 6px;
   padding: 10px 22px;
 }
 .whatis .whatis-info a:hover {
   color: #fff;
-  background: #000 none repeat scroll 0 0;
+  background: #7B2522 none repeat scroll 0 0;
+}
+.more-aboutinfo {
+  border-top: 6px solid #e4e4e4;
+  display: none;
+}
+.aboutinf-con {
+  padding: 40px 0;
+}
+.aboutinf-con p {
+  color: #617382;
+  font-family: arial;
+  line-height: 1.5;
+  margin-bottom: 23px;
+}
+.aboutinf-con ul,
+.whatis .whatis-info ul {
+  margin-bottom: 22px;
+}
+.aboutinf-con ul li,
+.whatis .whatis-info ul li {
+  color: #425463;
+  font-family: arial;
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+.aboutinf-con ul li i,
+.whatis .whatis-info ul li i {
+  font-size: 17px;
+  margin-right: 7px;
+  color: #DF251C;
 }
 .content-brown {
   background: #e4e4e4 none repeat scroll 0 0;
@@ -827,7 +947,7 @@ footer .footer-nav a:hover {
 }
 .work-pro li span i {
   align-self: center;
-  color: #ffb606;
+  color: #DF251C;
   display: table;
   font-size: 25px;
   margin: 0 auto;
@@ -876,5 +996,5 @@ footer .footer-nav a:hover {
   width: 100%;
 }
 .right-bar .list-itmes a:hover {
-  color: #FFB606;
+  color: #DF251C;
 }
