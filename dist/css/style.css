@@ -4,9 +4,8 @@ header .main-ul li a,
 .index-courses ul li div .img-box:before,
 .index-courses ul li div .img-box i,
 .index-courses ul li div a,
-.social-icon.blk a,
-.register-now .register-form form button,
 .newletter form button,
+.social-icon.blk a,
 footer .social-icon a,
 .whatis .whatis-info a,
 .work-pro li span,
@@ -149,13 +148,13 @@ ul {
   color: #afafaf;
 }
 .header-content .top-header p {
-  color: #c3c3c3;
+  color: #fff;
   display: inline-block;
   margin: 0 0 0 7px;
 }
 .header-content .top-header p i {
   color: #afafaf;
-  margin-right: 5px;
+  margin-right: 2px;
 }
 .header-content .top-header a {
   color: #fff;
@@ -190,7 +189,7 @@ header .main-ul li.active a {
 header .main-ul li a {
   color: #fff;
   font-weight: 700;
-  margin-left: 10px;
+  margin-right: 4px;
   padding: 8px 18px;
   text-transform: uppercase;
 }
@@ -333,7 +332,7 @@ header .main-ul li a:focus {
   clear: both;
   color: #8d8d8d;
   display: inline-block;
-  font-size: 13px;
+  font-size: 14px;
   margin: 5px 0;
   text-transform: capitalize;
   width: 100%;
@@ -414,9 +413,6 @@ header .main-ul li a:focus {
   color: #fff;
   padding: 10px;
   width: 100%;
-}
-.register-now .register-form form button:hover {
-  background: #7B2522;
 }
 .register-now .register-form h3 {
   color: #fff;
@@ -647,6 +643,9 @@ header .main-ul li a:focus {
   margin-left: -4px;
   padding: 15px 23px 14px;
 }
+.newletter form button:hover {
+  background: #7B2522;
+}
 .social-icon.blk {
   padding: 20px 0;
 }
@@ -656,9 +655,6 @@ header .main-ul li a:focus {
 }
 .social-icon.blk a:hover {
   color: #000;
-}
-.newletter form button:hover {
-  background: #7B2522;
 }
 .cours-detal-top {
   display: inline-block;
@@ -1017,6 +1013,9 @@ footer .footer-nav a:hover {
 .right-bar ul .addbox {
   color: red;
 }
+.right-bar ul .addbox img {
+  color: red;
+}
 .right-bar h3 {
   border-bottom: 1px solid #dfdfdf;
   font-size: 18px;
@@ -1037,7 +1036,6 @@ footer .footer-nav a:hover {
 }
 .right-bar .list-itmes a:hover {
   color: #DF251C;
-  color: #FFB606;
 }
 .contact-box {
   display: inline-block;
@@ -1065,31 +1063,6 @@ footer .footer-nav a:hover {
 }
 .contact-box form button.btn-theme:hover {
   background: #000;
-}
-.contact-info {
-  border-bottom: 1px solid #e5e5e5;
-  border-top: 1px solid #e5e5e5;
-  margin-top: -1px;
-  padding: 18px 0;
-}
-.contact-info h4 {
-  color: #444444;
-  font-size: 15px;
-  margin-bottom: 6px;
-}
-.contact-info span {
-  color: #8a8a8a;
-  font-size: 13px;
-}
-.contact-info i {
-  color: #ffb606;
-  float: left;
-  font-size: 26px;
-  margin: 10px 13px 10px 0;
-}
-.googleMap {
-  height: 500px;
-  width: 100%;
 }
 .sub-mail {
   background: #fff url("../images/bg-register-now.jpg") repeat scroll 0 0;
