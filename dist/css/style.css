@@ -1054,7 +1054,7 @@ footer .footer-nav a:hover {
   font-size: 12px;
 }
 .contact-box form button.btn-theme {
-  background: #ffb606 none repeat scroll 0 0;
+  background: #DF251C none repeat scroll 0 0;
   border-radius: 0;
   color: #fff;
   font-size: 13px;
@@ -1111,12 +1111,12 @@ footer .footer-nav a:hover {
   width: 280px;
 }
 .sub-mail form button {
-  background: #ffb606 none repeat scroll 0 0;
+  background: #df251c none repeat scroll 0 0;
   border: medium none;
   color: #fff;
-  height: 38px;
+  height: 40px;
   margin-left: -7px;
   padding: 0 20px;
   text-transform: uppercase;
-  transform: translate(0px, 1px);
+  transform: translate(0px, 0px);
 }
