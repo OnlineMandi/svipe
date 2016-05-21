@@ -96,7 +96,7 @@ ul {
 .main-slider .bx-pager .bx-pager-item {
   border-radius: 20px;
   float: left;
-  margin: 0 21px 18px;
+  margin: 0 10px 18px;
   position: relative;
 }
 .main-slider .bx-pager .bx-pager-item a {
@@ -208,7 +208,6 @@ header .main-ul li a:focus {
   margin-bottom: 4px;
   padding: 5px 0;
   width: 33%;
-  cursor: pointer;
 }
 .header-tabs .header-tabs-item:hover {
   background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
@@ -232,8 +231,8 @@ header .main-ul li a:focus {
 .page-content {
   background: #fff none repeat scroll 0 0;
   clear: both;
+  padding: 60px 0 40px;
   width: 100%;
-  padding: 60px 0;
 }
 .index-courses ul {
   margin: 0 -12px;
@@ -336,6 +335,7 @@ header .main-ul li a:focus {
   margin: 5px 0;
   text-transform: capitalize;
   width: 100%;
+  line-height: 1.4;
 }
 .head2.center,
 .aboutinf-con h2.center {
@@ -393,6 +393,7 @@ header .main-ul li a:focus {
 }
 .register-now .register-form {
   background: #fff none repeat scroll 0 0;
+  max-width: 410px;
   width: 100%;
 }
 .register-now .register-form form {
@@ -539,8 +540,10 @@ header .main-ul li a:focus {
 }
 .index-events .ievent-item a {
   color: #df251c;
+  float: left;
   font-family: arial;
-  margin-left: 70px;
+  margin-bottom: 12px;
+  margin-left: 67px;
 }
 #event-dtl {
   display: none;
@@ -676,7 +679,7 @@ header .main-ul li a:focus {
   width: 100%;
 }
 .cours-detal-top a {
-  background: #20d1e9 none repeat scroll 0 0;
+  background: #DF251C none repeat scroll 0 0;
   color: #fff;
   float: right;
   font-family: arial;
@@ -908,6 +911,7 @@ footer .footer-nav a:hover {
   display: inline-block;
   margin-top: 6px;
   padding: 10px 22px;
+  margin-bottom: 42px;
 }
 .whatis .whatis-info a:hover {
   color: #fff;
@@ -945,7 +949,6 @@ footer .footer-nav a:hover {
 }
 .content-brown {
   background: #e4e4e4 none repeat scroll 0 0;
-  height: 400px;
   padding: 60px 0;
 }
 .work-pro {
@@ -997,7 +1000,7 @@ footer .footer-nav a:hover {
   width: 100px;
 }
 .right-bar ul li span {
-  color: #00bf00;
+  color: #DF251C;
   display: inline-block;
   font-size: 13px;
   font-weight: 400;
@@ -1010,11 +1013,11 @@ footer .footer-nav a:hover {
 .right-bar ul li a:hover {
   color: #000;
 }
-.right-bar ul .addbox {
-  color: red;
+.right-bar .addbox {
+  width: 100%;
 }
-.right-bar ul .addbox img {
-  color: red;
+.right-bar .addbox img {
+  max-width: 100%;
 }
 .right-bar h3 {
   border-bottom: 1px solid #dfdfdf;
@@ -1027,6 +1030,7 @@ footer .footer-nav a:hover {
 .right-bar .list-itmes {
   float: left;
   margin: 4px 0 12px;
+  width: 100%;
 }
 .right-bar .list-itmes a {
   display: inline-block;
@@ -1119,4 +1123,279 @@ footer .footer-nav a:hover {
   padding: 0 20px;
   text-transform: uppercase;
   transform: translate(0px, 0px);
+}
+.bx-controls-direction {
+  display: none;
+}
+.navbar-toggle {
+  margin-right: 6px;
+  padding: 6px 9px;
+}
+.navbar-toggle i {
+  font-size: 24px;
+}
+@media only screen and (min-width: 0px) and (max-width: 767px) {
+  .navbar-collapse {
+    background: transparent;
+  }
+  .header-tabs {
+    display: none;
+  }
+  .slider-area .bx-controls {
+    display: none;
+  }
+  .top-header .col-sm-8 {
+    display: none;
+  }
+  header .navbar {
+    padding: 0;
+  }
+  header .main-ul {
+    background: #000 none repeat scroll 0 0;
+    margin: 0;
+    position: absolute;
+    right: 15px;
+    width: 227px;
+  }
+  header .main-ul li {
+    padding: 4px 4px 0;
+  }
+  header .main-ul li:last-child {
+    margin-bottom: 4px;
+  }
+  header .main-ul li a {
+    font-size: 13px;
+    margin-right: 0;
+    padding: 6px 10px;
+  }
+  .navbar {
+    z-index: 9;
+  }
+  .collapse {
+    padding: 0 15px;
+  }
+  .index-courses ul li {
+    width: 50%;
+  }
+  .head2,
+  .aboutinf-con h2 {
+    font-size: 21px;
+  }
+  .register-now {
+    padding: 0;
+  }
+  .register-now .register-info {
+    padding: 40px 0;
+  }
+  .register-now .register-info h2 {
+    font-size: 57px;
+  }
+  .register-now .register-form {
+    margin-bottom: 40px;
+  }
+  .page-content {
+    padding: 30px 0 10px;
+  }
+  .newletter {
+    background: #ececec none repeat scroll 0 0;
+    margin: 20px 0 0;
+    padding: 13px 15px;
+    width: 438px;
+  }
+  .newletter form {
+    margin: 9px 0;
+  }
+  .newletter form input {
+    width: 289px;
+  }
+  .slider-area-subpage .imgs {
+    height: 230px;
+    width: auto;
+  }
+  .sub-title h3 {
+    font-size: 28px;
+    margin: 24px 0;
+  }
+  .whatis .whatis-info img {
+    width: 249px;
+  }
+  .full-breadcrumb {
+    padding: 0;
+  }
+  .whatis .whatis-info img {
+    width: 270px;
+  }
+  .work-pro li {
+    width: 50%;
+  }
+  .whatis {
+    padding-top: 20px;
+  }
+  .index-events .ievent-item img {
+    float: left;
+    margin-left: 0;
+    width: 100%;
+  }
+  footer .copy-right,
+  footer .footer-nav {
+    margin-top: 10px;
+  }
+  .sub-mail {
+    padding: 40px 0;
+  }
+}
+@media only screen and (min-width: 0px) and (max-width: 479px) {
+  .welcome img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .index-courses ul li {
+    width: 100%;
+  }
+  .register-now .register-info {
+    padding: 40px 0 5px;
+  }
+  .register-now .register-info p {
+    font-size: 14px;
+  }
+  .register-now .register-info h2 {
+    font-size: 38px;
+  }
+  .register-now .register-form h3 {
+    font-size: 15px;
+  }
+  .register-now .register-form h3::before {
+    left: -265px;
+  }
+  .register-now .register-form form {
+    padding: 30px 26px;
+  }
+  .newletter {
+    width: 100%;
+  }
+  .newletter form input {
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .newletter form button {
+    margin-left: 0;
+    padding: 10px 23px 11px;
+  }
+  .whatis .whatis-info img {
+    margin: 0;
+    width: 100%;
+  }
+  .work-pro li {
+    width: 100%;
+  }
+  .cours-detal-top a {
+    float: left;
+    margin-bottom: 8px;
+  }
+  .cours-detal-top h2 {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) {
+  header .main-ul li a {
+    font-size: 13px;
+    padding: 7px 14px;
+  }
+  .header-tabs .header-tabs-item h3 {
+    font-size: 14px;
+  }
+  .header-tabs .header-tabs-item img {
+    padding: 8px;
+  }
+  .page-content {
+    padding: 30px 0 10px;
+  }
+  .index-courses ul li {
+    width: 33%;
+  }
+  .newletter {
+    margin: 50px auto -10px;
+  }
+  .main-slider .bx-pager .bx-pager-item {
+    margin: 0 2px 15px;
+  }
+  .slider-area-subpage .imgs {
+    height: 250px;
+    width: auto;
+  }
+  .sub-title h3 {
+    font-size: 32px;
+    margin: 24px 0;
+  }
+  .whatis .whatis-info img {
+    width: 249px;
+  }
+  .whatis {
+    padding-top: 30px;
+  }
+}
+@media (min-width: 992px) {
+  .header-tabs .header-tabs-item {
+    padding: 0;
+  }
+  .header-tabs .header-tabs-item h3 {
+    font-size: 18px;
+  }
+  .head2,
+  .aboutinf-con h2,
+  .aboutinf-con h2 {
+    font-size: 23px;
+  }
+  .newletter {
+    margin: 50px auto -40px;
+  }
+  header .main-ul li a {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+  .header-tabs .header-tabs-item img {
+    padding: 17px;
+  }
+  .page-content {
+    padding: 40px 0;
+  }
+  .index-courses ul li {
+    width: 25%;
+  }
+  .whatis .whatis-info img {
+    width: initial;
+  }
+  .whatis {
+    padding-top: 60px;
+  }
+  .right-bar ul li img {
+    width: 82px;
+  }
+}
+@media (min-width: 1200px) {
+  .header-tabs .header-tabs-item {
+    padding: 5px 0;
+  }
+  .header-tabs .header-tabs-item h3 {
+    font-size: 20px;
+  }
+  .head2,
+  .aboutinf-con h2,
+  .aboutinf-con h2 {
+    font-size: 26px;
+  }
+  .slider-area-subpage .imgs {
+    height: auto;
+    width: 100%;
+  }
+  .sub-title h3 {
+    font-size: 38px;
+    margin: 40px 0;
+  }
+  .right-bar ul li img {
+    width: 100px;
+  }
+  .page-content {
+    padding: 50px 0;
+  }
 }
