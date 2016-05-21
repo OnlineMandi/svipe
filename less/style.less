@@ -124,8 +124,8 @@ ul{
   top: 0;
   width: 100%;
   .top-header{
-    background: #000 none repeat scroll 0 0;
-    padding: 14px 0;
+    background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+    padding: 24px 0;
     width: 100%;
     span{
       display: inline-block;
@@ -136,8 +136,8 @@ ul{
       display: inline-block;
       margin: 0 0 0 7px;
       i{
-        color: #afafaf;
-        margin-right: 2px;
+        color: #fff;
+        margin-right: 7px;
       }
     }
     a{
@@ -148,11 +148,10 @@ ul{
   }
 }
 header{
-  background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
   .navbar{
     border: 0 none;
     margin: 0;
-    padding: 9px 0;
     .navbar-header{
       color: #fff;
     }
@@ -160,10 +159,19 @@ header{
       color: #fff;
       height: initial;
       padding: 8px;
+      position: relative;
+      width: 171px;
+      margin-bottom: 60px;
+      img{
+        position: absolute;
+        top: -62px;
+        width: 100%;
+      }
     }
   }
   .main-ul{
     float: right;
+    margin-top: 14px;
     li{
       padding: 9px 0;
       &.active a{
@@ -344,6 +352,13 @@ header{
     left: 2px;
     position: absolute;
     width: 60px;
+  }
+  a.read{
+    float: right;
+    font-family: arial;
+    font-size: 10px;
+    margin-top: 15px;
+    text-transform: capitalize;
   }
 }
 .register-now{
@@ -779,7 +794,9 @@ footer{
     display: inline-block;
     width: 100%;
     img{
-      margin-bottom: 26px;
+      margin-bottom: 14px;
+      margin-top: -30px;
+      width: 140px;
     }
     p{
       color: #9d9d9d;
@@ -1161,6 +1178,72 @@ footer{
 }
 
 
+.popup{
+  background: rgba(0,0,0,0.9) none repeat scroll 0 0;
+  display: none;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: 9999;
+  .res-form{
+    align-self: center;
+    background: #fff none repeat scroll 0 0;
+    border-top: 7px solid #DF251C;
+    display: table;
+    margin: 0 auto;
+    width: 330px;
+    padding: 22px 24px 26px;
+    text-align: center;
+    position: relative;
+    input{
+      text-align: center;
+      box-shadow: 0 0 0;
+      border: none;
+      border-radius: 0;
+      background: #eaeaea;
+    }
+    button{
+      border: none;
+      color:#fff;
+      background: #DF251C;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-radius: 0;
+      padding: 7px 50px;
+      &:extend(.transition);
+      &:hover{
+        background:#DF251C;
+      }
+    }
+    h5{
+      text-transform: uppercase;
+      margin-bottom: 14px;
+      margin-top: 0;
+      font-weight: 700;
+      font-size: 15px;
+    }
+    .close{
+      background: #DF251C none repeat scroll 0 0;
+      font-family: cursive;
+      font-size: 15px;
+      height: 20px;
+      left: 100%;
+      opacity: 1;
+      position: absolute;
+      text-shadow: 0 0 0;
+      top: 7px;
+      width: 20px;
+      color:#fff;
+    }
+  }
+}
+
+
+
+
+
 @media (min-width: 0px) {
 
 }
@@ -1274,6 +1357,13 @@ footer{
   .sub-mail {
     padding: 40px 0;
   }
+  .text-right p{
+    display:none !important;
+  }
+  header .navbar .navbar-brand {
+    width: 150px;
+    margin-bottom: 48px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .welcome img {
@@ -1327,6 +1417,12 @@ footer{
   .cours-detal-top h2 {
     font-size: 25px;
   }
+  .popup .res-form .close {
+    left: auto;
+    right: 0;
+    top: -13px;
+  }
+
 }
 @media (min-width: 768px) {
   header .main-ul li a {

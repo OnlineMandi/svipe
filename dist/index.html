@@ -31,7 +31,7 @@
     <div class="main-slider">
         <ul class="bxslider">
             <li><img class="imgs" src="images/slider.jpg"/></li>
-            <li><img src="images/slider.jpg"/></li>
+            <li><img src="images/slider1.jpg"/></li>
         </ul>
         <!--<div class="embed-responsive embed-responsive-16by9">-->
         <!--<video autoplay loop class="imgs">-->
@@ -41,20 +41,14 @@
         <div class="header-content">
             <div class="top-header">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-sm-8 col-xs-12">
-                            <span>Have any question?</span>
-                            <p><i class="fa fa-phone"></i>+91 9034066642</p>
-                            <p><i class="fa fa-envelope"></i>svipe.ambala@gmail.com</p>
-                        </div>
-                        <div class="col-sm-4 col-xs-12 text-right">
-                            <a href="#">Register</a>
-                            <a href="#">Login</a>
-                        </div>
+                    <div class="text-right">
+                        <p><i class="fa fa-phone"></i>+91 9034066642</p>
+                        <p><i class="fa fa-envelope"></i>svipe.ambala@gmail.com</p>
+                        <a href="#" id="rg-open">Register</a>
+                        <a href="#" id="lg-open">Login</a>
                     </div>
                 </div>
             </div>
-
             <header>
                 <div class="container">
                     <div class="row">
@@ -63,7 +57,7 @@
                                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                                     <i class="fa fa-bars"></i>
                                 </button>
-                                <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+                                <a class="navbar-brand" href="#"><img src="images/svipelogo.png"></a>
                             </div>
                             <!-- Collect the nav links, forms, and other content for toggling -->
                             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -121,7 +115,7 @@
             </div>
             <div class="col-md-7 col-xs-12">
                 <div class="index-events">
-                    <h2 class="head2">Upcoming Events</h2>
+                    <h2 class="head2">Upcoming Events <a class="read" href="#">View All</a></h2>
                     <div class="ievent-item">
                         <div class="ev-date-box">
                             <b>24</b>
@@ -158,7 +152,7 @@
     </div>
     <div class="container">
         <div class="index-courses">
-            <h2 class="head2">Popular Courses</h2>
+            <h2 class="head2">Popular Courses <a class="read" href="#">View All</a></h2>
             <ul>
                 <li>
                     <div>
@@ -372,7 +366,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-12 col-xs-12">
                 <div class="address">
-                    <img src="images/logo.png">
+                    <img src="images/svipelogo.png">
                     <p><i class="fa fa-phone"></i> +91 9034066642</p>
                     <p><i class="fa fa-envelope"></i> svipe.ambala@gmail.com</p>
                     <div class="social-icon">
@@ -431,6 +425,53 @@
         </div>
     </div>
 </footer>
+
+
+<div class="popup" id="login-popup">
+    <div class="res-form">
+        <h5>Login</h5>
+        <span class="close">x</span>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="User">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-default">Login</button>
+        </form>
+    </div>
+</div>
+
+
+<div class="popup" id="sign-popup">
+    <div class="res-form">
+        <h5>Register Now</h5>
+        <span class="close">x</span>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Full Name">
+            </div>
+            <div class="form-group">
+                <input type="email" class="form-control" placeholder="Email Address">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" placeholder="Phone">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <input type="password" class="form-control" placeholder="Re Enter Password">
+            </div>
+            <button type="submit" class="btn btn-default">Sign Up</button>
+        </form>
+    </div>
+</div>
+
+
+
+
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="js/jquery.min.js"></script>
 

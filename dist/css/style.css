@@ -11,7 +11,8 @@ footer .social-icon a,
 .work-pro li span,
 .right-bar ul li a,
 .right-bar .list-itmes a,
-.contact-box form button.btn-theme {
+.contact-box form button.btn-theme,
+.popup .res-form button {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   -ms-transition: all 0.2s;
@@ -139,8 +140,8 @@ ul {
   width: 100%;
 }
 .header-content .top-header {
-  background: #000 none repeat scroll 0 0;
-  padding: 14px 0;
+  background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
+  padding: 24px 0;
   width: 100%;
 }
 .header-content .top-header span {
@@ -153,8 +154,8 @@ ul {
   margin: 0 0 0 7px;
 }
 .header-content .top-header p i {
-  color: #afafaf;
-  margin-right: 2px;
+  color: #fff;
+  margin-right: 7px;
 }
 .header-content .top-header a {
   color: #fff;
@@ -162,12 +163,11 @@ ul {
   margin-left: 11px;
 }
 header {
-  background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0.3) none repeat scroll 0 0;
 }
 header .navbar {
   border: 0 none;
   margin: 0;
-  padding: 9px 0;
 }
 header .navbar .navbar-header {
   color: #fff;
@@ -176,9 +176,18 @@ header .navbar .navbar-brand {
   color: #fff;
   height: initial;
   padding: 8px;
+  position: relative;
+  width: 171px;
+  margin-bottom: 60px;
+}
+header .navbar .navbar-brand img {
+  position: absolute;
+  top: -62px;
+  width: 100%;
 }
 header .main-ul {
   float: right;
+  margin-top: 14px;
 }
 header .main-ul li {
   padding: 9px 0;
@@ -355,6 +364,14 @@ header .main-ul li a:focus {
   left: 2px;
   position: absolute;
   width: 60px;
+}
+.head2 a.read,
+.aboutinf-con h2 a.read {
+  float: right;
+  font-family: arial;
+  font-size: 10px;
+  margin-top: 15px;
+  text-transform: capitalize;
 }
 .register-now {
   background: transparent url("../images/bg-register-now.jpg") repeat scroll 0 0;
@@ -778,7 +795,9 @@ footer .address {
   width: 100%;
 }
 footer .address img {
-  margin-bottom: 26px;
+  margin-bottom: 14px;
+  margin-top: -30px;
+  width: 140px;
 }
 footer .address p {
   color: #9d9d9d;
@@ -1134,6 +1153,66 @@ footer .footer-nav a:hover {
 .navbar-toggle i {
   font-size: 24px;
 }
+.popup {
+  background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+  display: none;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  width: 100%;
+  z-index: 9999;
+}
+.popup .res-form {
+  align-self: center;
+  background: #fff none repeat scroll 0 0;
+  border-top: 7px solid #DF251C;
+  display: table;
+  margin: 0 auto;
+  width: 330px;
+  padding: 22px 24px 26px;
+  text-align: center;
+  position: relative;
+}
+.popup .res-form input {
+  text-align: center;
+  box-shadow: 0 0 0;
+  border: none;
+  border-radius: 0;
+  background: #eaeaea;
+}
+.popup .res-form button {
+  border: none;
+  color: #fff;
+  background: #DF251C;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 0;
+  padding: 7px 50px;
+}
+.popup .res-form button:hover {
+  background: #DF251C;
+}
+.popup .res-form h5 {
+  text-transform: uppercase;
+  margin-bottom: 14px;
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 15px;
+}
+.popup .res-form .close {
+  background: #DF251C none repeat scroll 0 0;
+  font-family: cursive;
+  font-size: 15px;
+  height: 20px;
+  left: 100%;
+  opacity: 1;
+  position: absolute;
+  text-shadow: 0 0 0;
+  top: 7px;
+  width: 20px;
+  color: #fff;
+}
 @media only screen and (min-width: 0px) and (max-width: 767px) {
   .navbar-collapse {
     background: transparent;
@@ -1243,6 +1322,13 @@ footer .footer-nav a:hover {
   .sub-mail {
     padding: 40px 0;
   }
+  .text-right p {
+    display: none !important;
+  }
+  header .navbar .navbar-brand {
+    width: 150px;
+    margin-bottom: 48px;
+  }
 }
 @media only screen and (min-width: 0px) and (max-width: 479px) {
   .welcome img {
@@ -1294,6 +1380,11 @@ footer .footer-nav a:hover {
   }
   .cours-detal-top h2 {
     font-size: 25px;
+  }
+  .popup .res-form .close {
+    left: auto;
+    right: 0;
+    top: -13px;
   }
 }
 @media (min-width: 768px) {
